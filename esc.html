@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<html>
+	<head>
+		<title>Q4</title>
+	</head>
+	<body>
+		<br/><br/>
+		<p>
+		Cookies servem para armazenar dados no navegador.<br/><br/>
+
+		Exemplo:<br/><br/>
+
+		&#60;?php<br/>
+			$valor = $_COOKIE['usuario'];<br/>
+			setcookie('usuario', 'Fulano');<br/>
+			echo "$valor";<br/>
+		?&#62;<br/>
+
+		</p>
+		<a href="cookies.php"><button>Exemplo Cookies</button></a><br/><br/>
+
+		<p> Include inclui um arquivo passado por parametro <br/><br/>
+
+		Exemplo:<br/><br/>
+		&#60;?php<br/>
+			include_once("esc.html");<br/>
+		?&#62;
+
+		</p>
+		<a href="include.php"><button>Exemplo Include</button></a><br/><br/>
+
+		<p>Function pode ser chamado em qualquer parte do codigo e faz uma tarefa e retorna um valor.<br/><br/>
+
+		Exemplo:<br/><br/>
+
+		&#60;?php<br/>
+		$a = 120;<br/>
+
+		comp($a);<br/>
+
+		echo "$a";<br/>
+
+		function comp (&$a){<br/>
+			if($a <=50)$a=$a+50;<br/>
+			else if(($a > 50)&&($a <= 100))$a = $a +100;<br/>
+			else if($a > 100)$a = $a +200;<br/>
+		}<br/>
+		?><br/>
+
+		</p>
+		<a href="function.php"><button>Exemplo Function</button></a><br/><br/>
+
+
+
+		<p>Form ou formulario &#233; feito em HTML e o PHP tem uma grande caracteristica que &#233; o tratamento do mesmo.<br/><br/>
+
+		Exemplo:<br/><br/>
+
+		&#60;!DOCTYPE html&#62;<br/>
+		&#60;html lang="pt-br"&#62;<br/>
+
+		&#60;html&#62;<br/>
+			&#60;head&#62;<br/>
+				&#60;title>Exemplo&#60;/title&#62;<br/>
+			&#60;/head&#62;<br/>
+		&#60;body&#62;<br/>
+			&#60;form name = "i_form" method = "POST" action="tratamento.php"&#62;<br/>
+
+			&#60;label&#62; Primeiro nome: &#60;/label&#62;<br/>
+			&#60;input type="texte" name="inome" size="40" maxlength="30"/><br/><br/>
+			&#60;label&#62; Sobrenome: &#60;/label><br/>
+			&#60;input type="texte" name="isnome" size="40" maxlength="30"/><br/><br/>
+			&#60;label&#62; E-mail: &#60;/label&#62;<br/>
+			&#60;input type="texte" name="iemail" size="40" maxlength="30"/&#62;<br/><br/>
+
+			&#60;input type="submit" value="Enviar"&#62;<br/>
+
+		&#60;/body><br/>
+		&#60;/html><br/><br/>
+
+		</p>
+		<a href="ex1.html"><button>Exemplo Form</button></a><br/><br/>
+		<p>
+			O elemento &#60;head&#62; &#233; o cabe&#231;alho do HTML.<br/>
+
+			Exemplo:<br/><br/>
+
+			&#60;head&#62;<br/>
+			&#60;title&#62; Ola mundo !!&#60;/title&#62;<br/>
+			&#60;/head&#62;<br/>
+
+		</p>
+		<p>
+			O elemento &#60;body&#62; &#233; o corpo do HTML, todo o conteudo vai dentro,S&#243; pode ter um por arquivo HTML.
+
+			Exemplo:<br/><br/>
+
+			&#60;body&#62;<br/>
+			&#60;p&#62; Ola mundo !!&#60;/p&#62;<br/>
+			&#60;/body&#62;<br/>
+
+		</p>
+		<p>
+			Substr retorna um peda&ccedilo da string.(nome da variavel ou valor string,valor inicial,comprimento)<br/><br/>
+
+			Exemplo:<br/><br/>
+
+			$palavra = "teste";<br/>
+			$teste = substr("$palavra", 1);      // retorna o valor $palavra<br/>
+			$teste = substr("$palavra", 2, -1);  // retorna o valor "est"<br/>
+			$teste = substr("$palavra", -2);    	// retorna "te"
+			$teste = substr('$palavra',0,-1);//retorna $palavra<br/>
+		</p>
+	</body>
+</html>
